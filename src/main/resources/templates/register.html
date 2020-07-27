@@ -211,20 +211,28 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="#">
+                        <form action="/api/v1/persons" method="post">
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName">
+                            </div>
+                            <div class="group-input">
+                                <label for="LastName">Last Name *</label>
+                                <input type="text" id="LastName">
+                            </div>
+                            <div class="group-input">
+                                <label for="username">Email address *</label>
+                                <input type="email" id="username">
                             </div>
                             <div class="group-input">
                                 <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <input type="password" id="pass">
                             </div>
                             <div class="group-input">
                                 <label for="con-pass">Confirm Password *</label>
-                                <input type="text" id="con-pass">
+                                <input type="password" id="con-pass">
                             </div>
-                            <button type="submit" class="site-btn register-btn">REGISTER</button>
+                            <button type="submit" onclick="alert('New User Registered!')" class="site-btn register-btn">REGISTER</button>
                         </form>
                         <div class="switch-login">
                             <a href="/login" class="or-login">Or Login</a>
